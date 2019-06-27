@@ -19,6 +19,7 @@ public class Main {
         bottle.openBottle();
 
 
+
         bottle.drink(3);
 
     }

@@ -24,18 +24,28 @@ public class Bottle {
     }
 
     public void openBottle(){
-        open=true;
+
+        if (open==true) {
+            System.out.println("Bottle is already open");
+        }else{
+            open=true;
         System.out.println("Bottle is opened" + open);
+        }
     }
 
     public void closeBottle(){
+
+        if (open==false){
+            System.out.println("Bottle is already closed");
+        }else{
         open=false;
         System.out.println("Bottle is closed"+ open);
+        }
     }
 
     public void drink(int liters){
 
-        if(liters>availableLiquid){
+        if(liters>=availableLiquid){
 
             System.out.println("Cant't drink " + liters +" liters");
         }
