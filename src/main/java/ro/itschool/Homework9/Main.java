@@ -17,6 +17,7 @@ public class Main {
         UpperCaseSuffixFormatter obj4=new UpperCaseSuffixFormatter("hello");
         String s4=obj4.format(obj4.format,"w");
         System.out.println(s4);
+        System.out.println(obj4.format);
 
 
     }
