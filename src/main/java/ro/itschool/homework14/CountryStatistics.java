@@ -66,6 +66,5 @@ public class CountryStatistics {
         }
 
         return max;
-
     }
 }
