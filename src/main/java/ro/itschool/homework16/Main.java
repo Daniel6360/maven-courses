@@ -23,8 +23,8 @@ public class Main {
 
 
 
-        System.out.println(IntTools.digitSum(1234));
-        System.out.println(IntTools.lastDigit(1238));
+
+
 
 
         IntTools test=new IntTools(1234);

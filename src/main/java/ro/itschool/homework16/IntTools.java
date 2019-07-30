@@ -7,8 +7,8 @@ public class IntTools {
         this.a = a;
     }
 
-    public static int digitSum(int num) throws Exception {
-        String[] conv = Integer.toString(num).split("");
+    public  int digitSum() throws Exception {
+        String[] conv = Integer.toString(this.a).split("");
         int result = 0;
         for (int i = 0; i < conv.length; i++) {
             result = result + Integer.parseInt(conv[i]);
@@ -17,8 +17,8 @@ public class IntTools {
         return result;
     }
 
-    public static int lastDigit(int num) throws Exception {
-        String[] conv = Integer.toString(num).split("");
+    public  int lastDigit() throws Exception {
+        String[] conv = Integer.toString(this.a).split("");
         int result = 0;
         for (int i = 0; i < conv.length; i++) {
             result = Integer.parseInt(conv[i]);
