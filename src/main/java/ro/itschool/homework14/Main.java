@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         CountryReader test=new CountryReader();
        // System.out.println(test.readCountry("src/Main/resources/countries.txt"));
 
@@ -17,6 +17,7 @@ public class Main {
 
         System.out.println(test1.getCountryCapital("Romania"));
         System.out.println(test1.getPopulation("Romania"));
+        System.out.println(test1.getArea("Romania"));
         System.out.println(test1.getLargestCountry());
 
 

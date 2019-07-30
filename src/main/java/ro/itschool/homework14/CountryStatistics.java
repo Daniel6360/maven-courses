@@ -26,30 +26,36 @@ public class CountryStatistics {
         return result;
     }
 
-    public String getCountryCapital(String countryName) {
+    public String getCountryCapital(String countryName) throws Exception {
         String result = null;
         for (Country country : countries) {
-            if (country.getName().equals(countryName)) {
+            if (!countryName.equals(country.getName())) {
+                throw new CountryNotFoundException();
+            } else if (country.getName().equals(countryName)) {
                 result = country.getCapital();
             }
         }
         return result;
     }
 
-    public long getPopulation(String countryName) {
+    public long getPopulation(String countryName) throws Exception {
         long result = 0;
         for (Country country : countries) {
-            if (country.getName().equals(countryName)) {
+            if (!countryName.equals(country.getName())) {
+                throw new CountryNotFoundException();
+            } else if (country.getName().equals(countryName)) {
                 result = country.getPopulation();
             }
         }
         return result;
     }
 
-    public long getArea(String countryName) {
+    public long getArea(String countryName) throws Exception {
         int result = 0;
         for (Country country : countries) {
-            if (country.getName().equals(countryName)) {
+            if (!countryName.equals(country.getName())) {
+                throw new CountryNotFoundException();
+            } else if (country.getName().equals(countryName)) {
                 result = country.getArea();
             }
         }

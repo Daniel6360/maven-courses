@@ -8,6 +8,10 @@ public class Country {
     long population;
     int area;
 
+    public Country (String name){
+        this(name,null,0,0);
+    }
+
     public Country(String name, String capital, long population, int area) {
         this.name = name;
         this.capital = capital;
