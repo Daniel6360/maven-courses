@@ -7,7 +7,7 @@ public class IntTools {
         this.a = a;
     }
 
-    public  int digitSum() throws Exception {
+    public int digitSum() throws Exception {
         String[] conv = Integer.toString(this.a).split("");
         int result = 0;
         for (int i = 0; i < conv.length; i++) {
@@ -17,7 +17,7 @@ public class IntTools {
         return result;
     }
 
-    public  int lastDigit() throws Exception {
+    public int lastDigit() throws Exception {
         String[] conv = Integer.toString(this.a).split("");
         int result = 0;
         for (int i = 0; i < conv.length; i++) {
@@ -30,13 +30,13 @@ public class IntTools {
     public int digitAt(int pos) throws Exception {
         String[] conv = Integer.toString(this.a).split("");
 
-        if(pos>conv.length||pos<0){
+        if (pos > conv.length || pos < 0) {
             throw new InvalidPositonException();
         }
 
         int result = 0;
         for (int i = 0; i <= pos; i++) {
-                result = Integer.parseInt(conv[i]);
+            result = Integer.parseInt(conv[i]);
         }
         return result;
     }

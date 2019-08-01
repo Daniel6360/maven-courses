@@ -7,10 +7,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws Exception {
         CountryReader test=new CountryReader();
-       // System.out.println(test.readCountry("src/Main/resources/countries.txt"));
+       // System.out.println(test.readCountry("src/SumOfNumbers/resources/countries.txt"));
 
 
-        CountryStatistics test1=new CountryStatistics(test.readCountry("src/Main/resources/countries.txt"));
+        CountryStatistics test1=new CountryStatistics(test.readCountry("src/SumOfNumbers/resources/countries.txt"));
        // System.out.println(test1.getAllCountries());
 
        // System.out.println(test1.getCountryStartingWithLetter("k"));
