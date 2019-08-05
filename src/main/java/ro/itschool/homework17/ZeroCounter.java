@@ -2,23 +2,18 @@ package ro.itschool.homework17;
 
 public class ZeroCounter {
     public static void main(String[] args) {
-        System.out.println(countZero(130303));
+        System.out.println(countZero(1303030));
     }
 
     public static int countZero(int number) {
         int counter = 0;
-        if (number==0) {
-            counter=0;
+        if (number == 0) {
+            return counter + countZero(number / 10);
 
 
-        }else {
+        } else {
 
-            if(number%10==0) {
-                counter++;
-                countZero(number/10);
-            }
-
+            return 0;
         }
-        return counter;
     }
 }
