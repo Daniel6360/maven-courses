@@ -9,12 +9,19 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         System.out.println();
+        String word="word";
+        String found="";
+        for (int i=0; i<word.length();i++){
+            found=found+"_";
+        }
+        System.out.println(found);
+
 
 
     }
 
-    public static int getDiagonalSum(int[][] matrix){
-        return  0;
-    }
+
+
+
 
 }
