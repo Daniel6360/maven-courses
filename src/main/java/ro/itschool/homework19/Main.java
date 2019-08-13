@@ -9,6 +9,6 @@ public class Main {
         System.out.println(Arrays.toString(srt.sort(new int[]{88,1,12,4})));
 
         RecursiveLinearSearch src=new RecursiveLinearSearch();
-        System.out.println(src.search(new int[]{1,2,3,4,86,100,43,7,14},14));
+        System.out.println(src.search(new int[]{3,4,86,100,43,7,14},14));
     }
 }
